@@ -1,13 +1,20 @@
 <?php
 
-namespace Models\Animal;
-
 abstract class Animal
 {
+    public string $type;
 
-    abstract public function getName(): string;
+    public function __construct($type)
+    {
+        $this->type = $type;
+    }
 
-    public function isBird()
+    public function getName():string
+    {
+        return $this->type;
+    }
+
+    public function isBird():bool
     {
         return false;
     }

@@ -1,8 +1,7 @@
 <?php
 
-use Models\Animal;
 
-abstract class Farm
+class Farm
 {
     public array $animals = [];
 
