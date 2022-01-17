@@ -1,5 +1,7 @@
 <?php
 
+namespace Animals\Horse;
+
 use Models\Animal\Animal;
 
 class Horse extends Animal

@@ -1,8 +1,11 @@
 <?php
 
+namespace Animals\Chicken;
+
 use Models\Bird\Bird;
 
-class Chiken extends Bird{
+class Chicken extends Bird
+{
 
     public function getName(): string
     {

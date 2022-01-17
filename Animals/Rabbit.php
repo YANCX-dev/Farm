@@ -1,5 +1,7 @@
 <?php
 
+namespace Animals\Rabbit;
+
 use Models\Animal\Animal;
 
 class Rabbit extends Animal
