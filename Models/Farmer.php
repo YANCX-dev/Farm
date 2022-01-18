@@ -13,7 +13,7 @@ class Farmer
 
     public function rollCall(Farm $farm)
     {
-        $farm->rollCall();
+        return $farm->rollCall();
     }
 
 }

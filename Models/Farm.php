@@ -15,10 +15,12 @@ class Farm
 
     public function rollCall()
     {
+        $out ="";
         shuffle($this->animals);
         foreach ($this->animals as $animal) {
-            $out = "На ферме обитает:" . $animal->getName();
+            $out .= "На ферме обитает:" . $animal->getName() ."<br/>";
         }
+
         return $out;
 
     }
