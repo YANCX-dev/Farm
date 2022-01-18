@@ -9,7 +9,7 @@ class Cockerel extends Bird
 
     public function getName(): string
     {
-        return "cockerel";
+        return "Cockerel";
     }
 
 }

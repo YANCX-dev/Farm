@@ -1,4 +1,5 @@
 <?php
+
 namespace Models\Bird;
 
 use Models\Animal\Animal;
@@ -6,7 +7,7 @@ use Models\Animal\Animal;
 abstract class Bird extends Animal
 {
 
-    public function getName():string
+    public function getName(): string
     {
         return $this->getName();
     }

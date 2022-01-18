@@ -42,27 +42,30 @@ $Farm = new Farm;
 $Farmer = new Farmer;
 $BirdFarm = new BirdFarm();
 
-$animals = [new Chicken(), new Dog(), new Horse(), new Pig(), new Rabbit(),new Cockerel(),new Ostrich()];
+$animals = [
+    new Chicken(),
+    new Dog(),
+    new Horse(),
+    new Pig(),
+    new Rabbit(),
+    new Cockerel(),
+    new Ostrich()
+];
 
+$birdCount = 0;
+$animalCount = 0;
 foreach ($animals as $animal) {
     if ($animal->isBird()) {
         $Farmer->addAnimal($BirdFarm, $animal);
+        $birdCount++;
     } else {
         $Farmer->addAnimal($Farm, $animal);
+        $animalCount++;
     }
 }
-$Farmer->rollCall($Farm);
-$Farmer->rollCall($BirdFarm);
-outInfo($Farm);
-var_dump($Farmer->rollCall($Farm));
 
 
-//var_dump($Farmer);
-//var_dump($BirdFarm);
-//var_dump($animal->isBird());
-//$cock = new Cockerel();
-//outInfo($cock->getName());
-//require_once $_SERVER["DOCUMENT_ROOT"] . '/index.view.php';
+require_once $_SERVER["DOCUMENT_ROOT"] . '/index.view.php';
 
 
 

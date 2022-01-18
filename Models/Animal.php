@@ -1,4 +1,5 @@
 <?php
+
 namespace Models\Animal;
 
 abstract class Animal
